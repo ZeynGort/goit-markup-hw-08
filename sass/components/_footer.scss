@@ -1,0 +1,10 @@
+footer {
+  background: #2f303a;
+  padding: 60px 0;
+}
+.footer-box {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: baseline;
+  }
+}

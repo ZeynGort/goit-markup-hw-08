@@ -1,0 +1,31 @@
+.logo {
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.72px;
+  @media screen and (min-width: $desktop) {
+    font-size: 26px;
+    letter-spacing: 0.78px;
+  }
+  &--light {
+    color: $colors-black;
+  }
+  &--dark {
+    display: inline-block;
+    color: $colors-white;
+  }
+  &__color {
+    color: $colors-selection;
+  }
+  &--mobile {
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
+  }
+  &--desk {
+    @media screen and (max-width: $pre-tablet) {
+      display: none;
+    }
+  }
+}

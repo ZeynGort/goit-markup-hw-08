@@ -1,0 +1,54 @@
+.clients {
+  padding-top: 94px;
+  &__head {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.84px;
+    @media screen and (min-width: $desktop) {
+      font-size: 36px;
+      letter-spacing: 1.08px;
+    }
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    gap: $space;
+  }
+  &__item {
+    // width: 170px;
+    // height: 92px;
+    flex-basis: calc((100% - $space) / 2);
+    @media screen and (min-width: $tablet){
+        flex-basis: calc((100% - 2 * $space) / 3);
+    }
+    @media screen and (min-width: $desktop){
+        flex-basis: calc((100% - 5 * $space) / 6);
+    }
+  }
+  &__link {
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: 1px solid $colors-svg;
+
+    transition: border-color 250ms $timing-function;
+    &:focus,
+    &:hover {
+      border-color: $colors-selection;
+    }
+  }
+  &__icon {
+    fill: $colors-svg;
+    transition: fill 250ms $timing-function;
+    .clients__link:focus &,
+    .clients__link:hover & {
+      fill: $colors-selection;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.about {
+  @media screen and (max-width: $pre-desktop) {
+    display: none;
+  }
+
+  &__head {
+    margin-bottom: 50px;
+    text-align: center;
+
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 1.08px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space;
+  }
+  &__item {
+    position: relative;
+    z-index: 0;
+    flex-basis: calc((100% - 3 * $space) / 4);
+  }
+  &__overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    z-index: 0;
+
+    background: rgba(47, 48, 58, 0.8);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+  }
+  &__text {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+  }
+}

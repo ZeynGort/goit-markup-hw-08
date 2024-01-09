@@ -1,0 +1,45 @@
+.modal {
+  position: absolute;
+  z-index: 1;
+  max-width: 450px;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+  transform: translate(-50%, -50%) scale(1);
+
+  border-radius: 4px;
+  background: $colors-white;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+  transition: transform 250ms $timing-function;
+  @media screen and (min-width: $tablet) {
+    max-width: 528px;
+  }
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+  &__button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  &__icon {
+    fill: $colors-black;
+    transition: fill 250ms $timing-function;
+    .modal__button:hover &,
+    .modal__button:focus & {
+      fill: $colors-selection;
+    }
+  }
+}

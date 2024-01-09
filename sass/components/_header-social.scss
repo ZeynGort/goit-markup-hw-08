@@ -1,0 +1,27 @@
+.header-social {
+  margin-top: 64px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  &__item {
+    position: relative;
+    &:not(:last-child)::after {
+      content: "";
+      width: 1px;
+      right: -10px;
+      top: 0;
+      height: 100%;
+      position: absolute;
+      background-color: rgba(33, 33, 33, 0.2);
+    }
+  }
+  &__link {
+    color: $colors-selection;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.22;
+    letter-spacing: 0.36px;
+  }
+}
