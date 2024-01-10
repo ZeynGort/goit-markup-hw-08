@@ -1,7 +1,12 @@
 .joining__text {
-  @media screen and (max-width: $pre-desktop) {
-    text-align: center;
+  @media screen and (max-width: $pre-tablet) {
     margin-top: 60px;
+  }
+  
+  text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    text-align: left;
   }
   color: $colors-white;
   font-size: 14px;

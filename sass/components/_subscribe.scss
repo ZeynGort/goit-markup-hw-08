@@ -20,6 +20,7 @@
   &__box {
     @media screen and (max-width: $pre-desktop) {
       max-width: 450px;
+      margin: 0 auto;
     }
     @media screen and (min-width: $desktop) {
       display: flex;

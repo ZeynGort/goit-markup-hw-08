@@ -1,4 +1,7 @@
 .header-social {
+      @media screen and (min-width: $tablet) {
+  display: none;
+}
   margin-top: 64px;
   display: flex;
   gap: 20px;

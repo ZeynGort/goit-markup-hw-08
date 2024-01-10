@@ -21,7 +21,7 @@
   &__item {
     position: relative;
     z-index: 0;
-    flex-basis: calc((100% - 3 * $space) / 4);
+    flex-basis: calc((100% - 2 * $space) / 3);
   }
   &__overlay {
     display: flex;

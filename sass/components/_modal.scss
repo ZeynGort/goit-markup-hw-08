@@ -14,7 +14,7 @@
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 
   transition: transform 250ms $timing-function;
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $desktop) {
     max-width: 528px;
   }
   .backdrop.is-hidden & {

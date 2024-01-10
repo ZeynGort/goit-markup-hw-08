@@ -1,14 +1,22 @@
 .contacts {
   margin-top: 70%;
   display: flex;
+  gap: 32px;
   flex-direction: column-reverse;
   @media screen and (min-width: $tablet) {
+    gap: 10px;
     margin-top: 0;
-    margin-left: auto;
     flex-direction: column;
+    justify-content: center;
+  }
+  @media screen and (min-width: $desktop) {
+    gap: 30px;
+    flex-direction: row;
+    align-items: center;
   }
 
   &__link {
+
     color: $colors-text;
     font-size: 24px;
     font-style: normal;
@@ -20,6 +28,10 @@
     @media screen and (min-width: $tablet) {
       display: flex;
       align-items: center;
+      font-size: 12px;
+      letter-spacing: 0.24px;
+    }
+    @media screen and (min-width: $desktop) {
       font-size: 14px;
       letter-spacing: 0.28px;
     }
@@ -36,13 +48,6 @@
       margin-right: 10px;
       fill: currentColor;
       transition: fill 250ms $timing-function;
-    }
-  }
-  &__item:not(:last-child) {
-    margin-top: 32px;
-    @media screen and (min-width: $tablet) {
-      margin-right: 40px;
-      margin-top: 0;
     }
   }
   @media screen and (max-width: $pre-tablet) {

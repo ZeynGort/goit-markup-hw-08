@@ -10,5 +10,6 @@
 
   function toggleMenu() {
     refs.menu.classList.toggle("open");
+        document.querySelector("body").classList.toggle("noscroll");
   }
 })();
