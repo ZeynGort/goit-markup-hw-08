@@ -25,6 +25,9 @@ header {
 
 .menu-container {
   @media screen and (max-width: $pre-tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     transform: translate(-101%, 0);
     position: absolute;
     top: 0;
@@ -35,13 +38,18 @@ header {
   }
   @media screen and (min-width: $tablet) {
     display: flex;
-        justify-content: space-between;
+    justify-content: space-between;
   }
-
+  
 
   &__button {
     @media screen and (min-width: $tablet) {
       display: none;
+    }
+    transition: fill 250ms $timing-function;
+    &:hover,
+    &:focus {
+      fill: $colors-selection;
     }
   }
   &__button[data-menu-close] {

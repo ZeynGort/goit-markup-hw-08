@@ -33,6 +33,10 @@
     color: inherit;
     background-color: transparent;
     cursor: pointer;
+
+    @media screen and (max-width: 320px) {
+      top: 42px;
+    }
   }
   &__icon {
     fill: $colors-black;
