@@ -40,7 +40,12 @@ header {
     display: flex;
     justify-content: space-between;
   }
-  
+  &__foot {
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 
   &__button {
     @media screen and (min-width: $tablet) {
